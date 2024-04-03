@@ -1,0 +1,4 @@
+all: http-hello
+
+http-hello: src/http-hello.c src/hello.h src/httpserver.h
+	musl-gcc -o http-hello -s -O2 -static src/http-hello.c
